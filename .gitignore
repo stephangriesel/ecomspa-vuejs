@@ -23,3 +23,4 @@ pnpm-debug.log*
 *.sw?
 
 *notes.txt
+.env
