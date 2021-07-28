@@ -1,9 +1,9 @@
 import {createApp} from 'vue';
 import App from './App.vue';
-import {ApolloClient, createHttpLink, InMemoryCache} from '@apollo/client/core';
+import {ApolloClient, InMemoryCache, createHttpLink} from '@apollo/client';
 import VueApollo from '@vue/apollo-option';
-import ProductComponent from './components/Product';
-import ProductsComponent from './components/Products';
+import ProductComponent from './components/ProductComponent';
+import ProductsComponent from './components/ProductsComponent';
 import {createRouter, createWebHashHistory} from 'vue-router';
 
 const httpLink = createHttpLink({
