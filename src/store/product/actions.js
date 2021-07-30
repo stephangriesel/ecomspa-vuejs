@@ -34,7 +34,9 @@ export function productDetails({commit}, id) {
 
 export function addCart({commit, getters}, payload) {
   let cart = getters.cart; // Takes whats in the cart to temporary variable
-  cart.push(payload); // Push product object to temporary variable
+  let data = payload.product;
+  data['quantity'] = payload.quantity;
+  cart.push(data); // Push product object to temporary variable
   commit('setCart', cart); // Adds cart array to state
 }
 
