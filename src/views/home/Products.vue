@@ -11,7 +11,7 @@
 </template>
 <script>
 import {mapActions, mapGetters} from 'vuex';
-import ProductCard from '../../components/ProductCard';
+import ProductCard from './ProductCard.vue';
 export default {
   computed: {
     ...mapGetters('product', ['products']),

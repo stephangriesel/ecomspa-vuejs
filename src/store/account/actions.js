@@ -1,5 +1,6 @@
 import router from '../../router';
 import Axios from 'axios';
+
 export function login({commit}) {
   // random test user api
   let url = 'https://randomuser.me/api/';
